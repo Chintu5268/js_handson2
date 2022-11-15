@@ -18,7 +18,7 @@
 
  </pre>
   <h2>Check whether the condition is fulfilled or not?</h2>
-  <h3>Write a program that takes a number and prints whether the number is divisible by 6and 9or not</h3>
+  <h3>Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not</h3>
   <pre>
 
 
@@ -88,11 +88,20 @@ const isEligible = (a) => {
   
 
   <pre>
-
     const Max_out_of_three = (A,B,C) => {
-    
-      return Math.max(A,B,C);
-      };
+      if(A>B&&A>C) {
+        return (A)
+      }
+      else if(B>C&B>A){
+        return (B)
+      }
+      else if(C>A&&C>B){
+        return (C)
+      }
+      else if(C==A&&C==B){
+        return (-1);
+      }
+   };   
     </pre>
 <h2>Second Smallest</h2>
 <h3>You are given 3 distinct integers  X , Y ,  and  Z ,  and your task is to find and return the second smallest integer among the three provided integers.</h3>      
@@ -104,7 +113,13 @@ const isEligible = (a) => {
 <h2>Check whether the triangle is Acute or Obtuse</h2>
 <h3>Write a program takes takes three angles and checks whether the triangle is acute or obtuse</h3>
    <pre>
-
+    const Triangle_Check = (A,B,C) => {
+      if(A<90 && B<90 && C<90)
+      return "acute";
+      else{
+      return "obtuse"; 
+      } 
+    };    
    </pre>
 </body>
 
