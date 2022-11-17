@@ -93,6 +93,25 @@ const isEligible = (a) => {
   </h3>
   <pre>
 
+    const findGrades = (a) => {
+      if(a<=10){
+        return "E";
+      }
+       else if(a>=11 && a<=20){
+        return "D";
+      }
+      else if(a>=21 && a<=30){
+        return "C";
+      }
+      else if(a>=31 && a<=40){
+        return "B";
+      }
+      else if(a>=41 && a<=50){
+        return "A";
+      }
+     };
+     
+     
  
 </pre>
 <h2>Get Value</h2>
@@ -103,6 +122,22 @@ const isEligible = (a) => {
 | E or e 	- Expert Coder   	|
 | D or d 	- Data Structure 	|
 </pre>
+const getValue = (a) => {
+  
+  if(a ==="P" || a ==="p"){
+    return "PrepBytes"
+  }
+  else if(a ==="Z" || a ==="z"){
+    return "Zenith"
+  }
+  else if(a ==="E" || a ==="e"){
+    return "Expert Coder"
+  }
+  else if(a ==="D" || a ==="d"){
+    return "Data Structure"
+  }
+  
+};
   <pre>
 
   </pre>
@@ -138,7 +173,7 @@ const isEligible = (a) => {
 <h3>Write a program takes takes three angles and checks whether the triangle is acute or obtuse</h3>
    <pre>
     const Triangle_Check = (A,B,C) => {
-      if(A<90 && B<90 && C<90)
+      if(A < 90 && B < 90 && C < 90)
       return "acute";
       else{
       return "obtuse"; 
@@ -148,3 +183,4 @@ const isEligible = (a) => {
 </body>
 
 </html>
+
